@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+body {
+	font-size: 1em;
+	line-height: 1.3em;
+	background-color: pink; /* Set the whole page background color to pink */
+}
+
+/* classes */
+.burntred {
+	color: #E94D40;
+}
+
+.navyblue {
+	color: #0C243C;
+}
+
+.specialcakesfont {
+	font-family: Arial, sans-serif;
+}
+
+.floatleft {
+    float: left;
+}
+
+.floatright {
+    float: right;
+}
+
+.clearboth {
+    clear: both;
+}
+
+.flex-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px 20px;
+	background-color: lightyellow; /* Add a light yellow background behind the header */
+}
+
+/* Increase the size of the navigation links */
+.header-nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 24px; /* Increase font size */
+}
+
+/* Light background color for cake description */
+.description-text {
+    font-size: 24px;
+    background-color: rgba(255, 255, 224, 0.7); /* light yellow with some transparency */
+    padding: 20px; /* some padding around the text */
+    border-radius: 8px; /* to round the corners */
+    line-height: 1.5;  /* For line spacing */
+    text-align: justify;  /* To distribute text evenly between margins */
+    hyphens: auto;  /* To help with breaking words more naturally, though not all browsers support it */
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light gray background for better visibility */
+}
+
+.footer-content {
+    text-align: center;
+    font-size: 1.5em; /* Increased font size */
+    width: 80%; /* Set a maximum width */
+    margin: 0 auto; /* Center the content */
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+.footer-content a {
+    color: #0055aa; /* Color for the email link */
+    text-decoration: none;
+}
+
+.header-logo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.header-nav a:hover {
+    text-decoration: underline;
+}
+
+h1.burntred {
+    font-size: 50px;
+}
+
+.description-text {
+    font-size: 24px;
+}
+
+.web-banner, .description-text, .image-section {
+    border-top: 2px solid #333; /* Add border-top to specified sections */
+    border-bottom: 2px solid #333; /* Add border-bottom to specified sections */
+    margin: 20px 0; /* Add some margin for aesthetics */
+}
+
+/* Centering content */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}

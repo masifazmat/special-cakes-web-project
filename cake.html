@@ -2,119 +2,237 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self';">
-    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
-    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
-    <meta name="description" content="Explore our delightful range of cakes available for sale.">
-    <title>Special Cakes - Cakes for Sale</title>
+    <!-- ... (same as before) -->
     <link rel="stylesheet" type="text/css" href="specialcakesstyles.css">
+    <style>
+        /* Styles for the header */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: lightyellow;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 20px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Styles for each article */
+        article {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            border-bottom: 2px solid #333; /* adds a border line below each article */
+        }
+
+        article img {
+            width: 150px; /* adjusted for layout purpose */
+            height: auto;
+            margin-right: 10px;
+        }
+
+        article div {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* center-align horizontally */
+            justify-content: center; /* center-align vertically */
+            width: 100%;
+            text-align: center; /* center-align the text */
+            font-size: 1.5em; /* Increased font size */
+        }
+        /* ... (You can add more styling here if needed) */
+    </style>
 </head>
 
 <body class="specialcakesfont">
+    <!-- HEADER -->
     <header>
+        <!-- Logo -->
         <a href="index.html" aria-label="Home - Special Cakes">
             <img src="logo.png" alt="Special Cakes Logo">
         </a>
+
+        <!-- Title -->
+        <div>
+            <h1>Our Special Cakes</h1>
+        </div>
+
+        
+
+        <!-- Navigation Bar -->
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="cake.html" aria-current="page">Cakes for Sale</a></li>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="cake.html">Cakes for Sale</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
-    
+
+    <!-- Web Banner -->
+    <div class="web-banner">
+        <img src="banner.jpg" alt="Welcome to Special Cakes" width="2000" height="645">
+    </div>
+
+    <!-- MAIN CONTENT -->
     <main>
-        <h1 class="burntred">Cakes for Sale</h1>
+        <h1 class="burntred" style="text-align:center;">Cakes for Sale</h1>
 
-        <section>
-            <h2 class="navyblue">Flavoured cakes</h2>
-            <img class="center" src="chocolateCake300.jpg" alt="Delicious Chocolate Cake">
-            <p class="center">Contains gluten, dairy, nuts, and eggs. Strawberry cakes contain strawberries.</p>
-        </section>
+        <!-- The articles with the adjustments can be seen below: -->
 
-        <section>
-            <h2 class="navyblue">Brownie</h2>
-            <img class="center" src="brownie300.jpg" alt="Tasty Brownie">
-            <p class="center">Contains dairy, nuts, and eggs.</p>
-        </section>
+        <!-- Flavoured Cakes -->
+        <article>
+            <img src="chocolateCake300.jpg" alt="Delicious Chocolate Cake">
+            <div>
+                <h2 class="navyblue">Chocolate Cake</h2>
+                <p>Caontains dairy.</p>
+            </div>
+        </article>
 
-        <section>
-            <h2 class="navyblue">Cake Icing</h2>
-            <img class="center" src="cakeIcing300.jpg" alt="Cake with white icing">
-            <p class="center">Contains dairy.</p>
-        </section>
+        <!-- Brownie -->
+        <article>
+            <img src="brownie300.jpg" alt="Tasty Brownie">
+            <div>
+                <h2 class="navyblue">Brownie</h2>
+                <p>Contains dairy, nuts, and eggs.</p>
+            </div>
+        </article>
 
-        <section>
-            <h2 class="navyblue">Cheese Cake</h2>
-            <img class="center" src="cheeseCake300.jpg" alt="Creamy Cheese Cake">
-            <p class="center">Contains gluten and dairy.</p>
-        </section>
+        <!-- Cake Icing -->
+        <article>
+            <img src="cakeIcing300.jpg" alt="Cake with white icing">
+            <div>
+                <h2 class="navyblue">Cake Icing</h2>
+                <p>Contains dairy.</p>
+            </div>
+        </article>
 
-        <section>
-            <h2 class="navyblue">Cup Cake</h2>
-            <img class="center" src="cupcake300.jpg" alt="Decorated Cup Cake">
-            <p class="center">Contains gluten, dairy, nuts and eggs.</p>
-        </section>
+        <!-- Cheese Cake -->
+        <article>
+            <img src="cheeseCake300.jpg" alt="Creamy Cheese Cake">
+            <div>
+                <h2 class="navyblue">Cheese Cake</h2>
+                <p>Contains gluten and dairy.</p>
+            </div>
+        </article>
 
-        <section>
-            <h2 class="navyblue">Decorated Cake</h2>
-            <img class="center" src="decoratedCake300.jpg" alt="Cake with colorful decoration">
-        </section>
+        <!-- Cup Cake -->
+        <article>
+            <img src="cupcake300.jpg" alt="Decorated Cup Cake">
+            <div>
+                <h2 class="navyblue">Cup Cake</h2>
+                <p>Contains gluten, dairy, nuts, and eggs.</p>
+            </div>
+        </article>
 
-        <section>
-            <h2 class="navyblue">Lemon Cake</h2>
-            <img class="center" src="lemonCake300.jpg" alt="Refreshing Lemon Cake">
-            <p class="center">Contains dairy and eggs.</p>
-        </section>
+        <!-- Decorated Cake -->
+        <article>
+            <img src="decoratedCake300.jpg" alt="Cake with colorful decoration">
+            <div>
+                <h2 class="navyblue">Decorated Cake</h2>
+                <p>A feast for both the eyes and taste buds.</p>
+            </div>
+        </article>
 
-        <section>
-            <h2 class="navyblue">Macaron</h2>
-            <img class="center" src="macaron300.jpg" alt="Multicolored Macarons">
-            <p class="center">Contains gluten, dairy, nuts and eggs.</p>
-        </section>
+        <!-- Lemon Cake -->
+        <article>
+            <img src="lemonCake300.jpg" alt="Refreshing Lemon Cake">
+            <div>
+                <h2 class="navyblue">Lemon Cake</h2>
+                <p>Contains dairy and eggs.</p>
+            </div>
+        </article>
 
-        <section>
-            <h2 class="navyblue">Orange Cake</h2>
-            <img class="center" src="orangeCake300.jpg" alt="Sweet Orange Cake">
-        </section>
+        <!-- Macaron -->
+        <article>
+            <img src="macaron300.jpg" alt="Multicolored Macarons">
+            <div>
+                <h2 class="navyblue">Macaron</h2>
+                <p>Contains gluten, dairy, nuts, and eggs.</p>
+            </div>
+        </article>
 
-        <section>
-            <h2 class="navyblue">Pink Birthday Cake</h2>
-            <img class="center" src="pinkBirthdayCake300.jpg" alt="Pink Cake for Birthday">
-        </section>
+        <!-- Orange Cake -->
+        <article>
+            <img src="orangeCake300.jpg" alt="Sweet Orange Cake">
+            <div>
+                <h2 class="navyblue">Orange Cake</h2>
+                <p>A zesty treat bursting with flavor.</p>
+            </div>
+        </article>
 
-        <section>
-            <h2 class="navyblue">Small Strawberry Cakes</h2>
-            <img class="center" src="smallStrawberryCakes300.jpg" alt="Mini Strawberry Cakes">
-        </section>
+        <!-- Pink Birthday Cake -->
+        <article>
+            <img src="pinkBirthdayCake300.jpg" alt="Pink Cake for Birthday">
+            <div>
+                <h2 class="navyblue">Pink Birthday Cake</h2>
+                <p>Perfect for celebrating special days.</p>
+            </div>
+        </article>
 
-        <section>
-            <h2 class="navyblue">Special Occasion Cake</h2>
-            <img class="center" src="specialOccasion300.jpg" alt="Cake for Special Occasions">
-            <p class="center">Can be made to match dietary requirements.</p>
-        </section>
+        <!-- Small Strawberry Cakes -->
+        <article>
+            <img src="smallStrawberryCakes300.jpg" alt="Mini Strawberry Cakes">
+            <div>
+                <h2 class="navyblue">Small Strawberry Cakes</h2>
+                <p>Delightful bites of strawberry goodness.</p>
+            </div>
+        </article>
 
-        <section>
-            <h2 class="navyblue">Strawberry Cake</h2>
-            <img class="center" src="strawberryCake300.jpg" alt="Cake with fresh strawberries">
-        </section>
+        <!-- Special Occasion Cake -->
+        <article>
+            <img src="specialOccasion300.jpg" alt="Cake for Special Occasions">
+            <div>
+                <h2 class="navyblue">Special Occasion Cake</h2>
+                <p>Can be made to match dietary requirements.</p>
+            </div>
+        </article>
 
-        <section>
-            <h2 class="navyblue">Tiramisu</h2>
-            <img class="center" src="tiramisu300.jpg" alt="Italian Tiramisu Dessert">
-        </section>
+        <!-- Strawberry Cake -->
+        <article>
+            <img src="strawberryCake300.jpg" alt="Cake with fresh strawberries">
+            <div>
+                <h2 class="navyblue">Flavoured Cake</h2>
+                <p>Contains gluten, dairy, nuts, and eggs. Strawberry cakes contain strawberries.</p>
+            </div>
+        </article>
+
+        <!-- Tiramisu -->
+        <article>
+            <img src="tiramisu300.jpg" alt="Italian Tiramisu Dessert">
+            <div>
+                <h2 class="navyblue">Tiramisu</h2>
+                <p>An Italian classic with coffee and mascarpone.</p>
+            </div>
+        </article>
 
     </main>
-    
+
+    <!-- FOOTER -->
     <footer>
-        <div>
+        <div class="footer-content">
+            <p>Address: 16 cartwright avenue, Merryland NSW</p>
+            <p>Contact no: <a href="tel:0402665005">0402 665 005</a></p>
+            <p>Email: <a href="mailto:muhammad.asif15@tafensw.edu.au">muhammad.asif15@tafensw.edu.au</a></p>
             <p>Created by: Muhammad Asif</p>
+            <p>All Rights Reserved</p>
         </div>
     </footer>
 </body>

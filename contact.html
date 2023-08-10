@@ -3,32 +3,70 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Special Cakes - Contact Us</title>
-    <meta name="description" content="Get in touch with us for delightful cake orders and queries.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self';">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta name="description" content="Get in touch with us for delightful cake orders and queries.">
+    <title>Special Cakes - Contact Us</title>
     <link rel="stylesheet" type="text/css" href="specialcakesstyles.css">
 </head>
 
 <body class="specialcakesfont">
-    <header>
-        <a href="index.html">
-            <img src="logo.png" alt="Special Cakes Logo">
+    <!-- HEADER -->
+    <header class="flex-header">
+        <!-- Logo -->
+        <a href="index.html" aria-label="Home - Special Cakes">
+            <img src="logo.png" alt="Special Cakes Logo" class="header-logo">
         </a>
+
+        <!-- Centered Header Text -->
+        <div class="header-center">
+            <h1 class="burntred">Contact Special Cakes</h1>
+        </div>
+        
+        <!-- Navigation Bar -->
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="cake.html">Cakes for Sale</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="cake.html">Cakes for Sale</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
+
+    <!-- Web Banner for Contact Us Page -->
+    <div class="web-banner center">
+        <img src="banner.jpg" alt="Get in touch with Special Cakes" width="2150" height="645">
+    </div>
+
+    <!-- MAIN CONTENT -->
     <main>
-        <h1 class="burntred">Contact Us</h1>
-        <p>For more information, please email us at <a href="mailto:info@specialcakes.com.au">info@specialcakes.com.au</a>
-            or call us at <a href="tel:+61402665005">(0402) 665-005</a>.</p>
+        <!-- Image for Contact Us Page -->
+        <div class="center image-section">
+            <img src="contact.jpg" alt="Get in touch with Special Cakes" width="300" height="250">
+        </div>
+
+        <!-- Add more sections or articles as necessary -->
     </main>
+
+    <!-- FOOTER -->
     <footer>
-        <p>© 2023 Special Cakes. All rights reserved.</p>
+        <div class="center" style="background-color: #f0f0f0; padding: 10px 0;">
+            <h2>Contact Information</h2>
+            <p>For more information, please email us at 
+                <a href="mailto:info@specialcakes.com.au">info@specialcakes.com.au</a>
+                or call us at <a href="tel:+61402665005">(0402) 665-005</a>.
+            </p>
+            <p>Address: 16 cartwright avenue, Merryland NSW</p>
+            <p>Email: <a href="mailto:muhammad.asif15@tafensw.edu.au">muhammad.asif15@tafensw.edu.au</a></p>
+            <p>Created by: Muhammad Asif</p>
+            <p>All rights reserved</p>
+        </div>
     </footer>
 </body>
 
