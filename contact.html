@@ -13,6 +13,22 @@
     <meta name="description" content="Get in touch with us for delightful cake orders and queries.">
     <title>Special Cakes - Contact Us</title>
     <link rel="stylesheet" type="text/css" href="specialcakesstyles.css">
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Makes content vertical */
+        }
+
+        .hours-section {
+            background-color: #f9f9f9; /* Light background color */
+            padding: 20px;
+            text-align: center;
+            margin: 10px;
+            width: 40%; /* Adjust as needed */
+        }
+    </style>
 </head>
 
 <body class="specialcakesfont">
@@ -45,12 +61,18 @@
     </div>
 
     <!-- MAIN CONTENT -->
-    <main>
+    <main class="center">
+        <!-- Opening Hours Centered -->
+        <div class="hours-section">
+            <h2>Opening Hours</h2>
+            <p>Monday - Saturday: 07:00 am to 05:00 pm</p>
+            <p>Sunday: 09:00 am to 12:00 pm</p>
+        </div>
+        
         <!-- Image for Contact Us Page -->
-        <div class="center image-section">
+        <div class="image-section">
             <img src="contact.jpg" alt="Get in touch with Special Cakes" width="300" height="250">
         </div>
-
     </main>
 
     <!-- FOOTER -->
@@ -68,5 +90,4 @@
         </div>
     </footer>
 </body>
-
 </html>
