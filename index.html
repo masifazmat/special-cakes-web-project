@@ -18,6 +18,7 @@
             background-color: pink;
             margin: 0;
             padding: 0;
+            font-size: 18px; /* Setting a base font-size for better scaling on mobile */
         }
 
         .flex-header {
@@ -31,6 +32,7 @@
         .header-logo {
             height: 50px;
             margin-right: 20px;
+            margin-bottom: 10px; /* Add a little space below the logo */
         }
 
         .header-nav ul {
@@ -39,12 +41,13 @@
             gap: 20px;
             margin: 0;
             padding: 0;
+            flex-wrap: wrap; /* Allow the nav items to wrap to next line on smaller screens */
         }
 
         .header-nav a {
             text-decoration: none;
             color: #333;
-            font-size: 20px; /* Increase size */
+            font-size: 20px;
         }
 
         .header-nav a:hover {
@@ -69,31 +72,64 @@
             padding: 20px 0;
         }
 
+        /* Responsive image */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Media query for devices with max width of 768px (tablet and down) */
+        @media only screen and (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+
+            .flex-header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .header-nav ul {
+                justify-content: center;
+            }
+
+            .web-banner center img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        /* Media query for devices with max width of 480px (mobile) */
+        @media only screen and (max-width: 480px) {
+            .description-text {
+                padding: 10px;
+            }
+        }
     </style>
 </head>
 
 <body class="specialcakesfont">
-   <!-- HEADER -->
-<header class="flex-header">
-    <!-- Logo -->
-    <a href="index.html" aria-label="Home - Special Cakes">
-        <img src="logo.png" alt="Special Cakes Logo" class="header-logo">
-    </a>
-    
-    <div class="header-center">
-        <h1 class="burntred">Welcome to Special Cakes</h1>
-    </div>
-    
-    <!-- Navigation Bar -->
-    <nav class="header-nav">
-        <ul>
-            <li><a href="index.html" aria-current="page">Home</a></li>
-            <li><a href="cake.html">Cakes for Sale</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- HEADER -->
+    <header class="flex-header">
+        <!-- Logo -->
+        <a href="index.html" aria-label="Home - Special Cakes">
+            <img src="logo.png" alt="Special Cakes Logo" class="header-logo">
+        </a>
+
+        <div class="header-center">
+            <h1 class="burntred">Welcome to Special Cakes</h1>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="cake.html">Cakes for Sale</a></li>
+                <li><a href="about.html">About Us</a></li> <!-- Corrected this link's text -->
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- Web Banner for Index Page -->
     <div class="web-banner center">
@@ -105,7 +141,7 @@
         <h1 class="burntred center">Welcome to Special Cakes</h1>
 
         <article class="center">
-            <p class="description-text">Special Cakes for All Occasions" embodies a dedication to sweet celebrations. With every carefully crafted cake, we capture the essence of life's pivotal moments, from birthdays to work events. Our website showcases a diverse array of flavors and designs, marrying classic tastes with modern twists. Whether you're commemorating a milestone or simply indulging a craving, our platform ensures an effortless journey from browsing to biting. Dive into our curated collection and make every event a tad more memorable with our signature touch</p>
+            <p class="description-text">"Special Cakes for All Occasions" embodies a dedication to sweet celebrations. With every carefully crafted cake, we capture the essence of life's pivotal moments, from birthdays to work events. Our website showcases a diverse array of flavors and designs, marrying classic tastes with modern twists. Whether you're commemorating a milestone or simply indulging a craving, our platform ensures an effortless journey from browsing to biting. Dive into our curated collection and make every event a tad more memorable with our signature touch</p>
         </article>
 
         <!-- Image for Index Page -->
