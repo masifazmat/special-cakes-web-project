@@ -3,22 +3,21 @@
 /* CSS Document */
 
 body {
-	font-size: 1em;
-	line-height: 1.3em;
-	background-color: pink; /* Set the whole page background color to pink */
+    font-size: 1em;
+    line-height: 1.3em;
+    background-color: pink;
 }
 
-/* classes */
 .burntred {
-	color: #E94D40;
+    color: #E94D40;
 }
 
 .navyblue {
-	color: #0C243C;
+    color: #0C243C;
 }
 
 .specialcakesfont {
-	font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 .floatleft {
@@ -38,41 +37,38 @@ body {
     align-items: center;
     justify-content: space-between; 
     padding: 10px 20px;
-	background-color: lightyellow; /* Add a light yellow background behind the header */
+    background-color: lightyellow;
 }
 
-/* Increase the size of the navigation links */
 .header-nav a {
     text-decoration: none;
     color: #333;
-    font-size: 24px; /* Increase font size */
+    font-size: 24px;
 }
 
-/* Light background color for cake description */
 .description-text {
     font-size: 24px;
-    background-color: rgba(255, 255, 224, 0.7); /* light yellow with some transparency */
-    padding: 20px; /* some padding around the text */
-    border-radius: 8px; /* to round the corners */
-    line-height: 1.5;  /* For line spacing */
-    text-align: justify;  /* To distribute text evenly between margins */
-    hyphens: auto;  /* To help with breaking words more naturally, though not all browsers support it */
+    background-color: rgba(255, 255, 224, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    line-height: 1.5;
+    text-align: justify;
+    hyphens: auto;
 }
 
-/* Footer Styles */
 footer {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: #f4f4f4; /* Light gray background for better visibility */
+    background-color: #f4f4f4;
 }
 
 .footer-content {
     text-align: center;
-    font-size: 1.5em; /* Increased font size */
-    width: 80%; /* Set a maximum width */
-    margin: 0 auto; /* Center the content */
+    font-size: 1.5em;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .footer-content p {
@@ -80,7 +76,7 @@ footer {
 }
 
 .footer-content a {
-    color: #0055aa; /* Color for the email link */
+    color: #0055aa;
     text-decoration: none;
 }
 
@@ -97,11 +93,6 @@ footer {
     padding: 0;
 }
 
-.header-nav a {
-    text-decoration: none;
-    color: #333;
-}
-
 .header-nav a:hover {
     text-decoration: underline;
 }
@@ -110,17 +101,12 @@ h1.burntred {
     font-size: 50px;
 }
 
-.description-text {
-    font-size: 24px;
-}
-
 .web-banner, .description-text, .image-section {
-    border-top: 2px solid #333; /* Add border-top to specified sections */
-    border-bottom: 2px solid #333; /* Add border-bottom to specified sections */
-    margin: 20px 0; /* Add some margin for aesthetics */
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    margin: 20px 0;
 }
 
-/* Centering content */
 .center {
     display: flex;
     justify-content: center;
@@ -128,3 +114,22 @@ h1.burntred {
     flex-direction: column;
     text-align: center;
 }
+
+/* Table styles */
+table {
+    border: 2px solid #333;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 10px;
+    font-weight: bold;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
