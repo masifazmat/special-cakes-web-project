@@ -1,23 +1,18 @@
 @charset "utf-8";
 
-/* CSS Document */
-
 body {
     font-size: 1em;
     line-height: 1.3em;
     background-color: pink;
+    font-family: Arial, sans-serif; /* Applying the Arial font family */
 }
 
 .burntred {
-    color: #E94D40;
+    color: #E94D40; /* Burnt red as per client requirements */
 }
 
 .navyblue {
-    color: #0C243C;
-}
-
-.specialcakesfont {
-    font-family: Arial, sans-serif;
+    color: #0C243C; /* Navy blue as per client requirements */
 }
 
 .floatleft {
@@ -83,6 +78,7 @@ footer {
 .header-logo {
     height: 50px;
     margin-right: 20px;
+    background-color: white; /* Logo needs to appear on a white background */
 }
 
 .header-nav ul {
